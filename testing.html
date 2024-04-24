@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Harry Hodges" content="My Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testing.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 class = header>Testing <img class="myLogo" src="images/logo.png" alt="myLogo" width="37" height="20"></h1>
+
+        <nav class="NavBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MyDegreeProgramme.html">My Degree Programme</a></li>
+                <li><a href="SGAandmySkills.html">SGA and mySkills</a></li>
+                <li><a href="quiz.html">Take my quiz!</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h2>Optimisation</h2>
+            <img class="images" src="images/Testing/optimisation.png" alt="Screenshot showing the page loading time">
+            <p>This image shows the loading time of my home page. In order to keep this as small as possible across all the webpages, I have introduced max-height and max-width attributes for some images. This prevents them from growing past a specific point at large screen sizes to reduce the image loading times.</p>
+        </div>
+
+        <div>
+            <h2>Debugging</h2>
+            <img class="images" src="images/Testing/ValidatingHomeHTML.png" alt="Screenshot of my html code being validated">
+            <p>I validated all of my html files. The image shows an example of two errors that I subsequently corrected.</p>
+            <img class="images" src="images/Testing/ValidatingQuizCSS.png" alt="Screenshot of my CSS code being validated">
+            <p>I validated all of my CSS files. There was not one error pointed out.</p>
+        </div>
+        <div>
+            <h2>Browser Testing</h2>
+            <img class="images" src="images/Testing/BrowserTesting.png" alt="Screenshot showing my website on 3 different browsers">
+            <p>This image shows my website on Chrome, Opera and Microsoft Edge. The website loaded perfectly fine worked for all screen sizes across all 3 of these browsers.</p>
+            <img class="images" src="images/Testing/iPhoneSE.png" alt="My website as seen on an iPhone SE">
+            <img class="images" src="images/Testing/iPadAir.png" alt="My website as seen on an iPad Air">
+            <p>These images show two of my pages on the iPhone SE and the iPad Air.</p>
+        </div>
+
+        <div>
+            <h2>Accessibility</h2>
+            <img class="images" src="images/Testing/susLinkText.png" alt="Alert from WAVE highlighting the issue of my link text being unclear">
+            <img class="images" src="images/Testing/smallText.png" alt="Alert from WAVE highlighting the issue of a line of text being too small">
+            <img class="images" src="images/Testing/underlinedText.png" alt="Alert from WAVE highlighting the issue of underlined text not representing a link">
+            <p>These three screenshots show three examples of my use of WAVE to highlight errors. I originally had all of my website links as "here" but I have now changed them to be more clear. I increased the font-size of that particular paragraph and I removed all the underlined text. </p>
+        </div>
+
+        <footer class="footer">
+            <ul>
+                <li><a href="legal&security.html">Legal and Security</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li class = copyright>&copy; 2022</li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html> -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/contact_us.css">
+
+<title>Contact Us</title>
+</head>
+
+<div class="navbar">
+  <div class="account">
+    <% if session['sid'].nil? or session['email'].nil? %>
+      <a href="#" disabled>My Account</a>
+    <% else %>
+      <a href="#">My Account</a>
+    <% end %>
+  </div>
+</div>
+
+<body>
+  <% if @form_submitted %>
+    <% if @form_error %>
+      <p><strong class="error">Please fill in the message</strong></p>
+    <% else %>
+      <p><strong class="success">We have recieved your message, thank you for contacting us</strong></p>
+    <% end %>
+  <% end %>
+
+  <h1>Contact Us</h1>
+  	<form method="post" action="/escaped_form_submission> 
+
+      <p>
+        <label for="subject">What is the subject of your query?</label><br>
+        <input type="text" name="subject" value="<%= @subject %>" placeholder="Subject..."><br>
+        <% if @subject_error %>
+          <br><strong class="error"><%= @subject_error %></strong>
+        <% end %>
+      </p>
+
+      <p>
+        <label for="message"> What would you like our help with? </label><br>
+        <textarea type="text" name="message" value="<%= @message %>" rows="10" cols="30" placeholder="Message..."></textarea><br>
+        <% if @message_error %>
+          <br><strong class="error"><%= @message_error %></strong>
+        <% end %>
+      </p>
+    <p><input type="submit" value="Submit"></p>
+  </form>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/course_dashboard">Course Dashboard</a>
+      <a href="/about">About Us</a>
+      <a href="/contact_us">Contact Us</a>
+      <a href="/help">Help</a>
+    </div>
+  </footer>
+
+  <script
+    src="https://kit.fontawesome.com/20cdcb079b.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>

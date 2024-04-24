@@ -1,0 +1,224 @@
+h1{
+    color: orange;
+    text-align: center;
+    font-size: 14px;
+    background-color: slategray;
+    font-family: trebuchet ms;
+    padding: 5px;
+}
+.myLogo {
+    float: right;
+}
+
+.MachuPicchu {
+    width: 35%;
+    height: auto;
+    padding-right: 5px;
+    float: right;
+    margin-right: 5%;
+    max-width: 200px;
+}
+
+h2 {
+    font-size: 13px;
+    font-family: trebuchet ms;
+}
+
+/* Different classes for the two paragraphs and headers so that I could style them differently */
+.grouph2andp {
+    background-color: blanchedalmond;
+    width: 49%;
+    margin-left: 5%;
+    font-size: 14px;
+}
+.grouph3andp {
+    background-color: blanchedalmond;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 16px;
+}
+
+.NavBar {
+    background-color: blanchedalmond;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: -20px;
+    padding-right: 20px;
+}
+
+nav a:hover { 
+    color: orange; 
+  }
+
+nav ul li {
+    display: inline;
+    font-size: 9px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* mobile width is 320px therefore that is the minimum */
+body {
+    min-width: 320px;
+}
+
+#wrapper {
+    width: 100%;
+    background-color: rgb(223, 208, 184);
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+footer ul li {
+    display: inline;
+    min-height: 100%;
+}
+
+/* 8.4px is the maximum font size that will still leave space for the copyright in the footer */
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 8.4px;
+    padding-right: 26px;
+    margin-left: -20px;
+}
+
+footer a:hover { 
+    color: orange; 
+}
+
+footer {
+    background-color: blanchedalmond;
+}
+.copyright{
+    float: right;
+    font-size: 10px;
+    margin: 4px;
+}
+
+/* 407px is the width at which the photo would overlap "grouph3andp" */
+@media screen and (min-width: 406px) {
+    .grouph3andp{
+        width: 90%;
+        font-size: 14px;
+    }
+    .grouph2andp{
+        font-size: 15px;
+    }
+    footer a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 431px) {
+    .grouph3andp{
+        width: 49%;
+        font-size: 12px;
+    }
+    .grouph2andp{
+        font-size: 12px;
+    }
+    footer a {
+        font-size: 12px;
+    }
+    .MachuPicchu{
+        max-height: 280px;
+    }
+}
+
+@media screen and (min-width: 535px) {
+    .header {
+        font-size: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 10px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    .grouph2andp {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .grouph3andp {
+        font-size: 18px;
+        margin-left: 20px;
+        width: 49%;
+    }
+    .MachuPicchu{
+        margin-right: 30px;
+        max-height: 100%;
+    }
+    footer a {
+        text-decoration: none;
+        font-size: 10px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: 30px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    footer a {
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    .grouph2andp{
+        width: 60%;
+        font-size: 20px;
+    }
+    .grouph3andp{
+        width: 60%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #wrapper { 
+        margin: 0 auto;
+    }
+    .MachuPicchu{
+        margin-right: 60px;
+        max-height: 320px;
+        width: auto;
+    }
+    .grouph2andp {
+        font-size: 22px;
+        width: 70%;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .grouph3andp {
+        font-size: 22px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .grouph2andp {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .grouph3andp {
+        font-size: 24px;
+    }
+}

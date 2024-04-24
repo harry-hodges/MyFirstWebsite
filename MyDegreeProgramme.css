@@ -1,0 +1,178 @@
+h1{
+    color: orange;
+    text-align: center;
+    font-size: 16px;
+    background-color: slategray;
+    font-family: trebuchet ms;
+    padding: 5px;
+}
+
+.myLogo{
+    float: right;
+}
+
+h2 {
+    font-size: 14px;
+    font-family: trebuchet ms;
+    margin-left: 2%;
+    padding-top: 2%;
+}
+
+p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.grouph2andp {
+    background-color: blanchedalmond;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 12px;
+}
+
+img{
+    max-width: 90%;
+    /* included max height for the larger screens, since some pictures grew far too large */
+    max-height: 220px;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%
+}
+
+.NavBar {
+    background-color: blanchedalmond;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: -20px;
+    padding-right: 20px;
+}
+
+nav a:hover { 
+    color: orange; 
+  }
+
+nav ul li {
+    display: inline;
+    font-size: 9px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+body {
+    min-width: 320px;
+}
+
+#wrapper {
+    width: 100%;
+    background-color: rgb(223, 208, 184);
+    margin: 0 auto;
+    min-height: 100%;
+
+}
+
+footer ul li {
+    display: inline;
+    min-height: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 8.4px;
+    padding-right: 26px;
+    margin-left: -20px;
+}
+
+footer a:hover { 
+    color: orange; 
+}
+
+.footer {
+    background-color: blanchedalmond;
+}
+.copyright{
+    float: right;
+    font-size: 10px;
+    margin: 4px;
+}
+
+@media screen and (min-width: 535px) {
+    .header {
+        font-size: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 10px;
+        padding-right: 15px;
+        margin: 2px;
+    }
+    .grouph2andp {
+        font-size: 18px;
+        margin-left: 5%;
+    }
+    footer a {
+        text-decoration: none;
+        font-size: 10px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: 30px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    footer a {
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #wrapper { 
+        margin: 0 auto;
+    }
+    .grouph2andp {
+        font-size: 22px;
+        width: 43%;
+        /* included min height so that all boxes are level with eachother */
+        height: 563px;
+        margin-left: 3%;
+    }
+    .compsci{
+        position: absolute;
+        top: 104px;
+        left: 50%;
+        width: 100%;
+    }
+    .machines{
+        position: absolute;
+        top: 684px;
+        left: 50%;
+        width: 100%;
+    }
+    .web{
+        position: absolute;
+        top: 1266px;
+        left: 50%;
+        width: 100%;
+    }
+    h2 {
+        font-size: 22px;
+    }
+}

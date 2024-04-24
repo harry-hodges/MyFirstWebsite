@@ -1,0 +1,147 @@
+h1{
+    color: orange;
+    text-align: center;
+    font-size: 16px;
+    background-color: slategray;
+    font-family: trebuchet ms;
+    padding: 5px;
+}
+
+.myLogo {
+    float: right;
+}
+
+.NavBar {
+    background-color: blanchedalmond;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: -20px;
+    padding-right: 20px;
+}
+
+nav a:hover { 
+    color: orange; 
+  }
+
+nav ul li {
+    display: inline;
+    font-size: 9px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+body {
+    min-width: 320px;
+}
+
+p{
+    font-family: trebuchet ms;
+    background-color: blanchedalmond;
+    font-size: 14px;
+    padding: 4px;
+    text-align: center;
+}
+
+.GDPR{
+    font-size: 10px;
+    background-color: rgb(223, 208, 184);
+    font-family: trebuchet ms;
+    text-align: left;
+}
+
+label{
+    background-color: blanchedalmond;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 20px;
+}
+
+form{
+    margin-left: 2%;
+}
+
+.submitButton{
+    margin-left: 2%;
+}
+
+#wrapper {
+    width: 100%;
+    background-color: rgb(223, 208, 184);
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+footer ul li {
+    display: inline;
+    min-height: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 8.4px;
+    padding-right: 26px;
+    margin-left: -20px;
+}
+
+footer a:hover { 
+    color: orange; 
+}
+
+.footer {
+    background-color: blanchedalmond;
+}
+
+.copyright{
+    float: right;
+    font-size: 10px;
+    margin: 4px;
+}
+
+@media screen and (min-width: 535px) {
+    .header {
+        font-size: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 10px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    footer a {
+        text-decoration: none;
+        font-size: 10px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: 30px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    footer a {
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 15px;
+        margin: 10px;
+    }
+    .GDPR{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #wrapper { 
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Harry Hodges" content="My Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ContactMe.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 class = header>Contact Me <img class="myLogo" src="images/logo.png" alt="myLogo" width="37" height="20"></h1>
+
+        <nav class="NavBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MyDegreeProgramme.html">My Degree Programme</a></li>
+                <li><a href="SGAandmySkills.html">SGA and mySkills</a></li>
+                <li><a href="quiz.html">Take my quiz!</a></li>
+            </ul>
+        </nav>
+
+        <p>If you wish to contact me outside of the form, email me at: <br>hhodges2@sheffield.ac.uk <br>Otherwise, please fill out the form below. </p>
+
+        <form class = email>
+            <br>
+            <label for="UserEmail">Please enter your email address:</label>
+            <br><br>
+            <input type="email" id="UserEmail" placeholder="Email..."> <br>
+            <p class="GDPR">Note: This data is required in order to contact me. It will not be shared with anyone. It will only be used to submit your comments and potentially receive replies. </p>
+            <br><br>
+        </form>
+
+
+        <form class="comments">
+            <label for="Comments">Please enter your comments: </label>
+            <br><br>
+            <textarea name="Comments" id="Comments" rows="10" cols="30" placeholder="Comments..."></textarea>
+            <br><br>
+        </form>
+
+        <!-- adding a class so that I can edit the submit button individually to the email, which I wouldn't be able to do if I used "input" -->
+        <input class="submitButton" type="Submit" value="Submit">
+
+        <footer class="footer">
+            <ul>
+                <li><a href="legal&security.html">Legal and Security</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li class = copyright>&copy; 2022</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

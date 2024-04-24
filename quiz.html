@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Harry Hodges" content="My Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 class = header>My Quiz <img class="myLogo" src="images/logo.png" alt="myLogo" width="37" height="20"></h1>
+
+        <nav class="NavBar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MyDegreeProgramme.html">My Degree Programme</a></li>
+            <li><a href="SGAandmySkills.html">SGA and mySkills</a></li>
+            <li><a href="quiz.html">Take my quiz!</a></li>
+            </ul>
+        </nav>
+
+        <h2>Welcome to my quiz</h2>
+        <p>This page consists of three images that relate to my life, including my hobbies and experiences. Simply read the questions, decide on an answer, and hover over it with your mouse. If it highlights green, you are correct! If it highlights blue, unfortunately, you are incorrect. Best of luck!</p>
+
+        <div class="images">
+            <!-- use of br tags so that images stay left and below eachother when the screen is made wider -->
+            <br><br>
+            <img class = "Redeemer" src="images/quiz/Rio.jpg" alt="A photo of me with Christ the Redeemer.">
+            <br><br>
+            <br><br>
+            <img class = "Eddie" src="images/quiz/Eddie.jpg" alt="a small, brown, non-moulting dog, known for its hair growing across its eyes.">
+            <br><br>
+            <br><br>
+            <img class = "Bench" src="images/quiz/100kg.jpg" alt="two 20kg plates on either side of a standard olympic weightlifting bar.">
+        </div>
+
+            <div class ="QuestionOne">
+                Where was this photo taken?
+            </div>
+        <!-- creating division for the answers so repositioning at different screen sizes is easier -->
+        <div class="Qone">
+            <!-- separate divisions needed since the answers need to be at separate heights -->
+            <div id="Rio">
+                Rio de Janerio
+            </div>
+            <div id="Beijing">
+                Beijing
+            </div>
+            <div id="Lima">
+                Lima                
+            </div>
+            <div id="BuenosAires">
+                Buenos Aires
+            </div>
+        </div>
+
+            <div class ="QuestionTwo">
+                What breed is my dog?
+            </div>
+        <div class="Qtwo">   
+            <div id="Cockapoo">
+                Cockapoo
+            </div>
+            <div id="GermanShepherd">
+                German Shepherd
+            </div>
+            <div id="GoldenRetriever">
+                Golden Retriever                
+            </div>
+            <div id="TibetanTerrior">
+                Tibetan Terrior
+            </div>
+        </div>
+
+        
+            <div class ="QuestionThree">
+                How much weight did I bench press in this photo?
+            </div>
+            <div class="Qthree">         
+                <div id="eighty">
+                    80kg
+                </div>
+                <div id="hundred">
+                    100kg
+                </div>
+                <div id="hundredtwenty">
+                    120kg                
+                </div>
+                <div id="twohundred">
+                    200kg
+                </div>
+            </div>
+
+        <footer class="footer">
+            <ul>
+                <li><a href="legal&security.html">Legal and Security</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li class = copyright>&copy; 2022</li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>
